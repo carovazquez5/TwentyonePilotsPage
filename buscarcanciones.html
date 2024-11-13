@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar canciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> 
+        <ul class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobrelabanda.html">Sobre la banda</a></li>
+            <li><a href="albumes.html">Discografia</a></li>
+            <li><a href="#">Buscar letra</a></li>
+            <li><a href="javascript:void(0);" onclick="toggleDarkMode()">Modo Oscuro</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <br>
+    <br>
+
+    <h1> Buscar cancion</h1>
+  
+    <div class="buscador">
+        <input type="text" placeholder="Buscar cancion" id="buscarCancion">
+        <label for="text"></label>
+        <button type="submit" onclick="buscarLyric()"> Buscar</button>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <div id="contentContainer">
+        <p>Pulsa los botones para cargar informacion de las canciones.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
